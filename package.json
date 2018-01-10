@@ -15,14 +15,23 @@
     "productName": "electron-sample-for-update",
     "linux": {
       "target": "AppImage",
-      "category": "Network"
+      "category": "Development"
     },
-    "appImage": {
-      "systemIntegration": "doNotAsk"
-    }
+    "files": [
+      "!publisher.json",
+      "!README.md",
+      "!updates.json"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyKhmylov/electron-auto-update.git"
   },
   "devDependencies": {
     "electron": "1.7.10",
     "electron-builder": "19.52.1"
+  },
+  "dependencies": {
+    "electron-simple-updater": "1.2.3"
   }
 }
