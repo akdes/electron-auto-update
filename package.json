@@ -1,0 +1,25 @@
+{
+  "name": "electron-auto-update",
+  "version": "0.0.1",
+  "description": "temp description",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "electronautoupdatetest01",
+    "productName": "electron-sample-for-update",
+    "linux": {
+      "target": "AppImage",
+      "category": "Network"
+    }
+  },
+  "devDependencies": {
+    "electron": "1.7.10",
+    "electron-builder": "19.52.1"
+  }
+}
