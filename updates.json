@@ -1,7 +1,7 @@
 {
   "linux-x64-prod": {
-    "update": "https://github.com/SergeyKhmylov/electron-auto-update/releases/download/linux-x64-prod-v0.0.5/electron-auto-update-0.0.5-x86_64.AppImage",
-    "install": "https://github.com/SergeyKhmylov/electron-auto-update/releases/download/linux-x64-prod-v0.0.5/electron-auto-update-0.0.5-x86_64.AppImage",
-    "version": "0.0.5"
+    "update": "https://github.com/SergeyKhmylov/electron-auto-update/releases/download/linux-x64-prod-v0.0.6/electron-auto-update-0.0.6-x86_64.AppImage",
+    "install": "https://github.com/SergeyKhmylov/electron-auto-update/releases/download/linux-x64-prod-v0.0.6/electron-auto-update-0.0.6-x86_64.AppImage",
+    "version": "0.0.6"
   }
 }

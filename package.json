@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-update",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "temp description",
   "main": "index.js",
   "scripts": {

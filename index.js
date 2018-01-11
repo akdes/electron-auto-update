@@ -7,6 +7,12 @@ const UPDATES_CONF = 'https://raw.githubusercontent.com/SergeyKhmylov/electron-a
 
 updater.init(UPDATES_CONF);
 
+updater.on('update-downloaded', function() {
+	if (window.confirm('The app has been updated. Do you like to restart it now?')) {
+      updater.quitAndInstall();
+    }
+})
+
 let window = null;
 
 app.once('ready', function() {
