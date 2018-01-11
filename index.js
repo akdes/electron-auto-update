@@ -2,6 +2,10 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const url = require('url');
+const updater = require('electron-simple-updater');
+const UPDATES_CONF = 'https://github.com/SergeyKhmylov/electron-auto-update/blob/master/updates.json';
+
+updater.init(UPDATES_CONF);
 
 let window = null;
 
