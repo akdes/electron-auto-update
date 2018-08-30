@@ -1,14 +1,16 @@
 {
   "name": "electron-auto-update",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "temp description",
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
+    "dist-linux": "electron-builder --arch=x64 --platform=linux",
     "publish": "publish",
-    "release": "npm run dist && npm run publish"
+    "release": "npm run dist && npm run publish",
+    "release-linux": "npm run dist-linux && npm run publish"
   },
   "author": "",
   "license": "ISC",
@@ -26,11 +28,11 @@
     ]
   },
   "updater": {
-    "url": "https://raw.githubusercontent.com/SergeyKhmylov/electron-auto-update/master/updates.json"
+    "url": "https://raw.githubusercontent.com/akdes/electron-auto-update/master/updates.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SergeyKhmylov/electron-auto-update.git"
+    "url": "git+https://github.com/akdes/electron-auto-update.git"
   },
   "devDependencies": {
     "electron": "1.7.10",
@@ -38,6 +40,7 @@
     "electron-simple-publisher": "0.4.9"
   },
   "dependencies": {
-    "electron-simple-updater": "1.2.3"
+    "electron-simple-updater": "1.2.3",
+    "npm": "^6.4.1"
   }
 }
